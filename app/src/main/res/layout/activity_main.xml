@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context="com.example.android.quizapp.MainActivity">
 
     <LinearLayout
@@ -14,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -32,7 +34,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,7 +76,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -82,27 +86,24 @@
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_correct1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Creep"
+                android:text="John Lennon"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_correct2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Circle of Life"
+                android:text="Paul McCartney"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q3_incorrect1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Karma Police"
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Brave Enough"
+                android:text="David Bowie"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -110,7 +111,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -119,27 +121,24 @@
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q4_incorrect1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Creep"
+                android:text="Piano"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q4_correct1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Circle of Life"
+                android:text="Playing violin while dancing"
                 android:textSize="16sp" />
 
             <CheckBox
+                android:id="@+id/q4_correct2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Karma Police"
-                android:textSize="16sp" />
-
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Brave Enough"
+                android:text="America Got Talent"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -147,7 +146,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -162,25 +162,26 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Creep"
+                    android:text="Drake"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q5_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Michael Jackson"
                     android:textSize="16sp" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Circle of Life"
+                    android:text="Thom Yorke"
                     android:textSize="16sp" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Karma Police"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Brave Enough"
+                    android:text="Ariana Grande"
                     android:textSize="16sp" />
             </RadioGroup>
         </LinearLayout>
@@ -188,7 +189,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            style="@style/questionGroup">
 
             <TextView
                 android:layout_width="match_parent"
@@ -203,26 +205,22 @@
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Creep"
+                    android:text="Riahanna"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q6_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beyonce"
                     android:textSize="16sp" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Circle of Life"
+                    android:text="Taylor Swift"
                     android:textSize="16sp" />
 
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Karma Police"
-                    android:textSize="16sp" />
-
-                <RadioButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Brave Enough"
-                    android:textSize="16sp" />
             </RadioGroup>
         </LinearLayout>
 

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -65,11 +66,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int checkQuestion3() {
-        String userAnswer = ((EditText) findViewById(R.id.q1_answer)).getText().toString();
+        Boolean correctAnswer1 = ((CheckBox) findViewById(R.id.q3_correct1)).isChecked();
+        Boolean correctAnswer2 = ((CheckBox) findViewById(R.id.q3_correct2)).isChecked();
+        Boolean incorrectAnswer1 = ((CheckBox) findViewById(R.id.q3_incorrect1)).isChecked();
 
-        userAnswer = userAnswer.toLowerCase().trim();
-
-        if (userAnswer.equals("queen")) {
+        if (correctAnswer1 && !incorrectAnswer1 && correctAnswer2) {
             return 1;
         }
 
@@ -77,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int checkQuestion4() {
-        String userAnswer = ((EditText) findViewById(R.id.q1_answer)).getText().toString();
+        Boolean correctAnswer1 = ((CheckBox) findViewById(R.id.q4_correct1)).isChecked();
+        Boolean correctAnswer2 = ((CheckBox) findViewById(R.id.q4_correct2)).isChecked();
+        Boolean incorrectAnswer1 = ((CheckBox) findViewById(R.id.q4_incorrect1)).isChecked();
 
-        userAnswer = userAnswer.toLowerCase().trim();
-
-        if (userAnswer.equals("queen")) {
+        if (correctAnswer1 && !incorrectAnswer1 && correctAnswer2) {
             return 1;
         }
 
@@ -90,11 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private int checkQuestion5() {
-        String userAnswer = ((EditText) findViewById(R.id.q1_answer)).getText().toString();
+        Boolean correctAnswer = ((RadioButton) findViewById(R.id.q5_correct)).isChecked();
 
-        userAnswer = userAnswer.toLowerCase().trim();
-
-        if (userAnswer.equals("queen")) {
+        if (correctAnswer) {
             return 1;
         }
 
@@ -102,11 +101,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int checkQuestion6() {
-        String userAnswer = ((EditText) findViewById(R.id.q1_answer)).getText().toString();
+        Boolean correctAnswer = ((RadioButton) findViewById(R.id.q6_correct)).isChecked();
 
-        userAnswer = userAnswer.toLowerCase().trim();
-
-        if (userAnswer.equals("queen")) {
+        if (correctAnswer) {
             return 1;
         }
 
