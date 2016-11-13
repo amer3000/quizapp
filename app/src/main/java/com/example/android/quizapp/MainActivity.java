@@ -21,7 +21,14 @@ public class MainActivity extends AppCompatActivity {
     public void submitQuiz(View view) {
 
         int correctAnswers = checkAnswers();
-        String message = "You answered correctly " + correctAnswers + " out of 6.";
+
+        String message;
+
+        if (correctAnswers == 6) {
+            message = "You answered everything correctly. You win!";
+        } else {
+            message = "You answered correctly " + correctAnswers + " out of 6.";
+        }
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
